@@ -1,5 +1,5 @@
-controllers:
+api_routes:
     resource:
-        path: ../src/Controller/
-        namespace: App\Controller
+        path: ../src/PruebaTecnica/Infrastructure/Controller/
+        namespace: App\PruebaTecnica\Infrastructure\Controller
     type: attribute

@@ -1,0 +1,44 @@
+SimpleXMLElement {#179
+  +"@attributes": array:1 [
+    "SegmentKey" => "IB042620220601MADBIO"
+  ]
+  +"Departure": SimpleXMLElement {#190
+    +"AirportCode": "MAD"
+    +"Date": "2022-06-01"
+    +"Time": "11:50"
+    +"AirportName": "Madrid Adolfo Suarez-Barajas"
+    +"Terminal": SimpleXMLElement {#195
+      +"Name": "4"
+    }
+  }
+  +"Arrival": SimpleXMLElement {#185
+    +"AirportCode": "BIO"
+    +"Date": "2022-06-01"
+    +"Time": "12:55"
+    +"ChangeOfDay": "0"
+    +"AirportName": "Bilbao"
+  }
+  +"MarketingCarrier": SimpleXMLElement {#178
+    +"AirlineID": "IB"
+    +"Name": "Iberia"
+    +"FlightNumber": "0426"
+  }
+  +"OperatingCarrier": SimpleXMLElement {#181
+    +"AirlineID": "IB"
+    +"Name": "Iberia"
+    +"Disclosures": SimpleXMLElement {#187
+      +"Description": SimpleXMLElement {#175
+        +"Text": "IB"
+      }
+    }
+  }
+  +"Equipment": SimpleXMLElement {#203
+    +"AircraftCode": "321"
+    +"Name": "Airbus A321"
+  }
+  +"FlightDetail": SimpleXMLElement {#196
+    +"FlightDuration": SimpleXMLElement {#191
+      +"Value": "PT1H5M"
+    }
+  }
+}
