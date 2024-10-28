@@ -8,6 +8,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-simplexml": "*",
+        "league/uri-interfaces": "^7.4",
         "phpdocumentor/reflection-docblock": "^5.4",
         "phpstan/phpdoc-parser": "^1.33",
         "symfony/amphp-http-client-meta": "^1.0",

@@ -1,13 +1,18 @@
 # prueba_lleego
 
 
-## Install
+## Install dependencies
 ```
 composer install
 ```
 
 
 ## Use
+
+Run server:
+```
+symfony server:start
+```
 
 Executing via console:
 ```
