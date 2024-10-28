@@ -26,3 +26,6 @@ curl -H "Accept: application/json" "http://127.0.0.1:8000/api/avail?origin=MAD&d
 
 
 ## Execute testing
+```
+php bin/phpunit
+```

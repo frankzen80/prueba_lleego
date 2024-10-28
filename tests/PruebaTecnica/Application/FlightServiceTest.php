@@ -21,7 +21,6 @@ class FlightServiceTest extends TestCase
 
     public function testGetAvailableFlightsReturnsExpectedSegments(): void
     {
-        // Arrange
         $origin = 'PMI';
         $destination = 'MAD';
         $date = '2024-10-28';
@@ -46,10 +45,8 @@ class FlightServiceTest extends TestCase
             ->with($origin, $destination, $date)
             ->willReturn($expectedSegments);
 
-        // Act
         $result = $this->flightService->getAvailableFlights($origin, $destination, $date);
 
-        // Assert
         $this->assertEquals($expectedSegments, $result);
     }
 }

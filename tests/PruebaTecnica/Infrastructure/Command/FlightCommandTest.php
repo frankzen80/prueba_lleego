@@ -26,7 +26,6 @@
 
         public function testExecuteSuccess(): void
         {
-            // Arrange
             $segment = new Segment();
             $segment->setOriginCode('PMI')
                 ->setOriginName('Palma de Mallorca')
@@ -43,14 +42,12 @@
                 ->method('getAvailableFlights')
                 ->willReturn([$segment]);
 
-            // Act
             $this->commandTester->execute([
                 'origin' => 'PMI',
                 'destination' => 'MAD',
                 'date' => '2024-10-28'
             ]);
 
-            // Assert
             $this->assertEquals(0, $this->commandTester->getStatusCode());
             $display = $this->commandTester->getDisplay();
             $this->assertStringContainsString('PMI', $display);
@@ -60,20 +57,17 @@
 
         public function testExecuteFailure(): void
         {
-            // Arrange
             $this->flightService
                 ->expects($this->once())
                 ->method('getAvailableFlights')
                 ->willThrowException(new \Exception('Error al buscar vuelos'));
 
-            // Act
             $this->commandTester->execute([
                 'origin' => 'PMI',
                 'destination' => 'MAD',
                 'date' => '2024-10-28'
             ]);
 
-            // Assert
             $this->assertEquals(1, $this->commandTester->getStatusCode());
             $this->assertStringContainsString('Error al buscar vuelos', $this->commandTester->getDisplay());
         }

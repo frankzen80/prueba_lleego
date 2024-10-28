@@ -34,7 +34,6 @@ class FlightControllerTest extends TestCase
 
     public function testGetAvailabilityReturnsSuccess(): void
     {
-        // Arrange
         $request = new Request([
             'origin' => 'PMI',
             'destination' => 'MAD',
@@ -73,7 +72,7 @@ class FlightControllerTest extends TestCase
             'companyCode' => 'IB',
             'companyName' => 'Iberia'
         ]];
-        
+
         $this->assertJsonStringEqualsJsonString(
             json_encode($expectedData),
             $response->getContent()
